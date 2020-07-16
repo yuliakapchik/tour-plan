@@ -478,7 +478,7 @@ template {
   .container {
     max-width: 700px;
   }
-  .navbar:first-of-type {
+  .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -500,6 +500,9 @@ template {
   .container {
     max-width: 576px;
     width: 92%;
+  }
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
