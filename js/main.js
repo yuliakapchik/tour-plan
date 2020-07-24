@@ -31,3 +31,7 @@ var reviewsSlider = new Swiper(".reviews-slider", {
 
   speed: 600,
 });
+
+$(".newsletter-parallax").parallax({
+  imageSrc: "../img/newsletter-background.jpg",
+});
