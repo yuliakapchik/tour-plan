@@ -10,8 +10,8 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header class="navbar">
@@ -223,18 +223,7 @@
               <button class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.88346782027!2d27.237710114804706!3d37.83961387974772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bea9324f6fb3d7%3A0xcace13096e49dec7!2sGrand%20Blue%20Sky%20International!5e0!3m2!1sru!2sby!4v1595412360038!5m2!1sru!2sby"
-                width="100%"
-                height="213"
-                frameborder="0"
-                style="border: 0;"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
-            </div>
+            <div class="map" id="map-hotel" style="height: 213px;"></div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
@@ -246,7 +235,7 @@
     <section
       class="newsletter newsletter-parallax"
       data-parallax="scroll"
-      data-image-src="../img/newsletter-background.jpg"
+      data-image-src="./img/newsletter-background.jpg"
     >
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">
@@ -414,6 +403,7 @@
     </section>
     <!-- /.reviews -->
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=5c3eb546-62a3-4346-ad97-4c2348fc5b29&lang=ru_RU"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/main.js"></script>
