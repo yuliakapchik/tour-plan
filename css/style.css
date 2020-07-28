@@ -583,7 +583,7 @@ template {
   width: 728px;
   height: 450px;
   border-radius: 8px;
-  owerflow: hidden;
+  overflow: hidden;
 }
 
 .hotel-slider__button {
@@ -596,6 +596,21 @@ template {
   height: 30px;
   border: none;
   cursor: pointer;
+  outline: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+
+.hotel-slider__button--next {
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+}
+
+.hotel-slider__button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
 }
 
 .hotel-slider__item {
@@ -783,11 +798,8 @@ template {
 .map {
   width: 347px;
   height: 213px;
-}
-
-.ymaps-2-1-77-map ymaps, .ymaps-2-1-77-map ymaps::after, .ymaps-2-1-77-map ymaps::before {
   border-radius: 10px;
-  owerflow: hidden;
+  overflow: hidden;
 }
 
 .newsletter {
