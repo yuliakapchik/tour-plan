@@ -1339,6 +1339,15 @@ template {
   margin-right: 5px;
 }
 
+.number__paragraph {
+  margin: 0;
+}
+
+.number__link {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
