@@ -1771,4 +1771,10 @@ template {
             order: 1;
   }
 }
+
+@media (max-width: 360px) {
+  .search__input {
+    width: 243px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
