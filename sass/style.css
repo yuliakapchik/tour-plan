@@ -1398,7 +1398,7 @@ template {
     line-height: 15px;
   }
   .search__input {
-    width: 340px;
+    max-width: 340px;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
