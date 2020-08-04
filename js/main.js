@@ -57,4 +57,19 @@ menuButton.addEventListener("click", function () {
   document
     .querySelector(".navbar-bottom")
     .classList.toggle("navbar-bottom--visible");
+
+});
+
+// при нажатии на пункт меню, меню должно сворачиваться
+
+// Прокрутка на jQuery к якорю
+$(document).ready(function() {
+  $(".navbar-menu__link").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });
 });
