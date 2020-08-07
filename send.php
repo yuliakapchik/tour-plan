@@ -29,11 +29,11 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'maur5a17@gmail.com'; // Логин на почте
-    $mail->Password   = 'disadisa'; // Пароль на почте
+    $mail->Username   = '3367959y@gmail.com'; // Логин на почте
+    $mail->Password   = 'dimochka17122006!'; // Пароль на почте
     $mail->SMTPSecure = 'SSL';
     $mail->Port       = 465;
-    $mail->setFrom('maur5a17@gmail.com', 'Дмитрий Капчик'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('3367959y@gmail.com', 'Юлия Капчик'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('lulu-sun@mail.ru');
