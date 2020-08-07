@@ -38,19 +38,19 @@ try {
     // Получатель письма
     $mail->addAddress('lulu-sun@mail.ru');
 
-// Отправка сообщения
-$mail->isHTML(true);
-$mail->Subject = $title;
-$mail->Body = $body;    
+    // Отправка сообщения
+    $mail->isHTML(true);
+    $mail->Subject = $title;
+    $mail->Body = $body;    
 
-// Проверяем отравленность сообщения
-if ($mail->send()) {$result = "success";} 
-else {$result = "error";}
+    // Проверяем отравленность сообщения
+    if ($mail->send()) {$result = "success";} 
+    else {$result = "error";}
 
-} catch (Exception $e) {
-    $result = "error";
-    $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
-}
+    } catch (Exception $e) {
+        $result = "error";
+        $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
+    }
 
-// Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+    // Отображение результата
+    echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
