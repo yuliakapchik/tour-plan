@@ -252,7 +252,7 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -362,24 +362,7 @@
                   earum. Quasi distinctio autem, tempora libero voluptatum
                   placeat! Aut amet culpa animi, atque quas quisquam blanditiis
                   voluptate, in distinctio sapiente deserunt facilis possimus
-                  quibusdam veritatis, officiis aliquid corrupti id! A fugit
-                  illum officia placeat unde quo, deserunt repellendus ullam hic
-                  quos velit consequatur maxime neque fuga quae at! Modi dolor
-                  sapiente est esse facere facilis ut in repellendus,
-                  voluptatem, voluptate quis voluptates. Sapiente voluptatum
-                  odio aliquam repudiandae nemo nostrum doloribus soluta
-                  reprehenderit, explicabo magni adipisci, facere culpa. Natus,
-                  itaque veritatis voluptatum maiores exercitationem praesentium
-                  sequi ipsa officiis nesciunt doloremque adipisci, quas,
-                  molestiae doloribus hic provident voluptas pariatur facere
-                  nostrum consectetur recusandae quod. Id sed sint possimus
-                  laborum fugiat maiores mollitia a corrupti veniam perferendis
-                  repudiandae, temporibus quas eaque illo velit explicabo
-                  provident magnam aliquam voluptatibus suscipit, maxime ab
-                  earum dolorum. Molestiae, eius neque? Soluta in aut, vero nemo
-                  tenetur veniam dolorem fuga porro. Dolores nostrum vitae
-                  corporis at tempora eos placeat distinctio officiis assumenda
-                  voluptatibus.
+                  quibusdam veritatis, officiis aliquid corrupti id!
                 </p>
               </div>
               <!-- .reviews-slider__item -->
@@ -411,13 +394,7 @@
                   laudantium laborum eos saepe accusamus nihil libero cum.
                   Sapiente dolores ea error ratione cupiditate maiores,
                   aspernatur vitae ad quam corrupti quasi quaerat iusto
-                  excepturi omnis aperiam incidunt, suscipit, eos vel? Eveniet
-                  rerum natus placeat laudantium repellat aperiam dolor, tempora
-                  nam, minus aspernatur amet eligendi maiores dicta mollitia,
-                  numquam optio aliquid. Iste voluptatem reprehenderit
-                  accusantium, impedit magnam nesciunt? Excepturi id,
-                  repudiandae sunt suscipit iste ad nam quod corrupti quis harum
-                  distinctio non. Velit, hic.
+                  excepturi omnis aperiam incidunt, suscipit, eos vel?
                 </p>
               </div>
               <!-- .reviews-slider__item -->
@@ -662,7 +639,7 @@
                 name="phone"
               />
               <textarea
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
@@ -694,9 +671,49 @@
       </div>
       <!-- /.container -->
     </footer>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/main.js"></script>
+   <div class="modal">
+     <div class="modal__overlay"></div>
+     <!-- /.modal__overlay -->
+     <div class="modal__dialog">
+       <a href="#" class="modal__close">
+         <img src="img/close.svg" alt="icon: close">
+       </a>
+       <h3 class="modal__title modal__title--mb-3">Booking</h3>
+       <form action="send.php" method="POST" class="modal__form">
+         <input
+           type="text"
+           class="input modal__input"
+           placeholder="Your Full Name*"
+           name="name"
+         />
+         <input
+           type="text"
+           class="input modal__input"
+           placeholder="Phone Number*"
+           name="phone"
+         />
+         <input
+           type="text"
+           class="input modal__input"
+           placeholder="Email*"
+           name="email"
+         />
+         <textarea
+           class="message modal__message"
+           placeholder="Message"
+           name="message"
+         ></textarea>
+         <button class="button modal__button">Send</button>
+         <span class="modal__info">* Required Fields</span>
+       </form>
+     </div>
+     <!-- /.modal__dialog -->
+   </div>
+   <!-- /.modal -->
+  <script src="js/jquery-3.5.1.min.js"></script> 
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/main.js"></script>
   </body>
 </html>
