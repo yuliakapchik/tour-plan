@@ -88,4 +88,28 @@ $(document).ready(function () {
     }
   });
 
+  // Валидация форм через плагин jquery
+  $(".form").each(function () {
+    $(this).validate({
+      // чтобы проверка срабатывала для каждой формы по-отдельности
+      errorClass: "invalid",
+      // присваивался класс invalid, а не стандартный класс error
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "The name should not be shorter than 2 letters",
+        },
+        phone: {
+          required: "Your phone number",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+      },
+    });
+  });
+
+
+
 });
