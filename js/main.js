@@ -97,7 +97,7 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Please specify your name",
-          minlength: "The name should not be shorter than 2 letters",
+          minlength: "Min 2 letters",
         },
         phone: {
           required: "Your phone number",
@@ -109,7 +109,4 @@ $(document).ready(function () {
       },
     });
   });
-
-
-
 });
