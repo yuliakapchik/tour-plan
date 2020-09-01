@@ -109,5 +109,57 @@ $(document).ready(function () {
       },
     });
   });
+
+  // $(".modal__form").validate({
+  //     errorClass: "invalid",
+  //     // присваивался класс invalid, а не стандартный класс error
+  //     messages: {
+  //       name: {
+  //         required: "Please specify your name",
+  //         minlength: "Min 2 letters",
+  //       },
+  //       phone: {
+  //         required: "Your phone number",
+  //       },
+  //       email: {
+  //         required: "We need your email address to contact you",
+  //         email: "Your email address must be in the format of name@domain.com",
+  //       },
+  //     },
+  //   });
+
+  //   $(".footer__contact-form").validate({
+  //     errorClass: "invalid",
+  //     // присваивался класс invalid, а не стандартный класс error
+  //     messages: {
+  //       name: {
+  //         required: "Please specify your name",
+  //         minlength: "Min 2 letters",
+  //       },
+  //       phone: {
+  //         required: "Your phone number",
+  //       },
+  //     },
+  //   });
+
+  // $(".newsletter__subscribe").validate({
+  //     // проверка только для формы newsletter
+  //     errorClass: "subscribe__invalid",
+  //     messages: {
+  //       email: {
+  //         required: "We need your email address to contact you",
+  //         email: "Your email address must be in the format of name@domain.com",
+  //       },
+  //     },
+  //   });
+
+  // запуск анимации
   AOS.init();
+
+//  сжимаем избражения. Вместо всех изображений загрузится одна маленькая картинка, а потом
+// с помощью jquery картинки вернутся на место
+$('img[src="img/reviews-avatar.jpg"]').each(function(index, el) {
+  $(el).attr('src', $(el).data('real-src'));
+});
+
 });

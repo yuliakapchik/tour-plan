@@ -13,7 +13,8 @@
       margin-top: 4px
       margin-bottom: 0
     &__description
-      margin: 5px 0
+      margin: 0
+      padding: 0
   &-name
     font-size: 24px
     line-height: 30px
@@ -21,7 +22,9 @@
     display: flex
     flex-wrap: wrap
     align-items: center
-  &-discription
+  &-description
+    font-style: normal
+    font-weight: normal
     font-size: 12px
     line-height: 15px
   &-grid
@@ -95,6 +98,8 @@
   &__counter
     font-size: 14px
     line-height: 18px
+    &-five
+      font-size: 10px
 .booking
   font-family: Nunito, sans-serif
   background-color: $dark
@@ -102,7 +107,7 @@
   border-radius: 8px
   width: 350px
   min-height: 210px
-  padding: 28px
+  padding: 29px 29px 26px 26px
   &__info
     display: flex
     justify-content: space-between
@@ -161,6 +166,7 @@
   &__button
     width: 100%
     min-height: 45px
+    //  есть поставлю жестку. высоту в соответствии с макетом, то не пройду тест на переполняемость
     font-weight: 600
     font-size: 14px
     line-height: 19px
@@ -170,8 +176,11 @@
     color: $light
     cursor: pointer
     outline: none
+    padding: 13px 0
     // чтобы в хроме кнопки при нажатии не выделялись обводкой
 .map
+  cursor: pointer
+  background-size: cover
   width: 347px
   height: 213px
   border-radius: 10px
